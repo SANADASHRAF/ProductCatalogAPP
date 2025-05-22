@@ -418,7 +418,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Repository\\Repository.csproj": {
+                "projectPath": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Repository\\Repository.csproj"
+              },
+              "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Service.Contracts\\Service.Contracts.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -436,6 +443,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

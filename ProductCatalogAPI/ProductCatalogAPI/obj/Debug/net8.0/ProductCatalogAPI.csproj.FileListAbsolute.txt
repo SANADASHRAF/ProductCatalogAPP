@@ -160,3 +160,4 @@ G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debu
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debug\net8.0\Service.pdb
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debug\net8.0\Contracts.pdb
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debug\net8.0\Entities.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debug\net8.0\AutoMapper.dll

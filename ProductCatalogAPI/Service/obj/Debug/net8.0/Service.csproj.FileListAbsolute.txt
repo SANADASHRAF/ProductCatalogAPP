@@ -10,3 +10,13 @@ G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\S
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\refint\Service.dll
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.pdb
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\ref\Service.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Contracts.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Entities.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Repository.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Service.Contracts.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Repository.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Service.Contracts.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Contracts.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Entities.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.csproj.Up2Date
