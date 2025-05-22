@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "D4H2qn9YfG6aXUo7gJIAAd+GCWoBvNAguQdSA+3gMvU=",
+  "Source": "ProductCatalogAPI",
+  "BasePath": "_content/ProductCatalogAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -15,6 +15,8 @@ namespace Repository
         {
         }
 
+        public void CreateUser(ApplicationUser user) =>
+             Create(user);
 
     }
 }

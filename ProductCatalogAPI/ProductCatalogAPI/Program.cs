@@ -5,14 +5,20 @@ using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureServiceManager();
+
 builder.Services.ConfigureSqlContext(builder.Configuration);
 
 builder.Services.ConfigureCors();
+builder.Services.AddAutoMapper(typeof(Program));
 
-builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
 
 builder.Services.AddControllers();
+
+builder.Services.AddAuthentication();
+builder.Services.ConfigureJWT(builder.Configuration);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -20,3 +20,5 @@ G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\C
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Entities.pdb
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Shared.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Shared.pdb

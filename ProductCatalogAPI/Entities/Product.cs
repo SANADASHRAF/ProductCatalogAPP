@@ -24,7 +24,7 @@ namespace Entities
         public DateTime StartDate { get; set; }
 
         [Required]
-        public TimeSpan Duration { get; set; }
+        public string Duration { get; set; }
 
         [Required]
         public decimal Price { get; set; }

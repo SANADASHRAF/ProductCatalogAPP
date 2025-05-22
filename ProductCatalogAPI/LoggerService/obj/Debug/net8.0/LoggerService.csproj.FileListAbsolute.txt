@@ -1,0 +1,12 @@
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\bin\Debug\net8.0\LoggerService.deps.json
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\bin\Debug\net8.0\LoggerService.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\bin\Debug\net8.0\LoggerService.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\LoggerService.AssemblyInfoInputs.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\LoggerService.AssemblyInfo.cs
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\LoggerService.csproj.CoreCompileInputs.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\LoggerService.sourcelink.json
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\LoggerService.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\refint\LoggerService.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\LoggerService.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll

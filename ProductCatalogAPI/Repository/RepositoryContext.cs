@@ -31,9 +31,9 @@ namespace Repository
             if (!Categories.Any())
             {
                 Categories.AddRange(
-                    new Category { Id = 1, Name = "Books" },
-                    new Category { Id = 2, Name = "Clothing" },
-                    new Category { Id = 3, Name = "Games" }
+                    new Category {  Name = "Books" },
+                    new Category {  Name = "Clothing" },
+                    new Category {  Name = "Games" }
                 );
             }
             SaveChanges();

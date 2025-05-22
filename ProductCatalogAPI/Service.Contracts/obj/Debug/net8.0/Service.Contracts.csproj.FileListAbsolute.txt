@@ -10,3 +10,9 @@ G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\obj\Debu
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\obj\Debug\net8.0\refint\Service.Contracts.dll
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\obj\Debug\net8.0\Service.Contracts.pdb
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\obj\Debug\net8.0\ref\Service.Contracts.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\bin\Debug\net8.0\Entities.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\bin\Debug\net8.0\Shared.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\bin\Debug\net8.0\Entities.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\bin\Debug\net8.0\Shared.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\obj\Debug\net8.0\Service.Contracts.csproj.AssemblyReference.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service.Contracts\obj\Debug\net8.0\Service..DEC3DE55.Up2Date
