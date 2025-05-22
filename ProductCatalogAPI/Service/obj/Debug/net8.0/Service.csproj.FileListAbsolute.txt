@@ -1,0 +1,12 @@
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Service.deps.json
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Service.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\bin\Debug\net8.0\Service.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.sourcelink.json
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\refint\Service.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\Service.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\Service\obj\Debug\net8.0\ref\Service.dll

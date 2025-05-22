@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\productCatalog\\ProductCatalogAPI\\Entities\\Entities.csproj": {}
+    "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "G:\\productCatalog\\ProductCatalogAPI\\Entities\\Entities.csproj": {
+    "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\productCatalog\\ProductCatalogAPI\\Entities\\Entities.csproj",
+        "projectUniqueName": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "G:\\productCatalog\\ProductCatalogAPI\\Entities\\Entities.csproj",
+        "projectPath": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\top\\.nuget\\packages\\",
-        "outputPath": "G:\\productCatalog\\ProductCatalogAPI\\Entities\\obj\\",
+        "outputPath": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogAPI\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -48,8 +48,18 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

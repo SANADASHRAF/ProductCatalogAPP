@@ -1,0 +1,12 @@
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\bin\Debug\net8.0\ProductCatalogAPI.Presentation.deps.json
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\bin\Debug\net8.0\ProductCatalogAPI.Presentation.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\bin\Debug\net8.0\ProductCatalogAPI.Presentation.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ProductCatalogAPI.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ProductCatalogAPI.Presentation.AssemblyInfoInputs.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ProductCatalogAPI.Presentation.AssemblyInfo.cs
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ProductCatalogAPI.Presentation.csproj.CoreCompileInputs.cache
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ProductCatalogAPI.Presentation.sourcelink.json
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ProductCatalogAPI.Presentation.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\refint\ProductCatalogAPI.Presentation.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ProductCatalogAPI.Presentation.pdb
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI.Presentation\obj\Debug\net8.0\ref\ProductCatalogAPI.Presentation.dll
