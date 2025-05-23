@@ -1,0 +1,80 @@
+﻿@model ProductCatalogMVC.Response.ServiceResponse<IEnumerable<ProductCatalogMVC.DTO.ProductDto>>
+
+@{
+    ViewData["Title"] = "المنتجات";
+}
+
+<h1 class="mb-4 text-center">المنتجات</h1>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @if (Model.Success && Model.Data != null)
+    {
+        foreach (var product in Model.Data)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">
+                            <strong>الفئة:</strong> @product.CategoryName<br />
+                            <strong>السعر:</strong> @product.Price.ToString("C")<br />
+                            <strong>تاريخ البدء:</strong> @product.StartDate.ToString("dd/MM/yyyy")<br />
+                            <strong>المدة:</strong> @product.Duration<br />
+                            <strong>أنشئ بواسطة:</strong> @product.CreatedByUserName
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-12 text-center">
+            <p class="text-muted">لا توجد منتجات متاحة</p>
+        </div>
+    }
+</div>
+
+@if (Model.Pagination != null)
+{
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            @if (Model.Pagination.CurrentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.Pagination.CurrentPage - 1)" asp-route-pageSize="@Model.Pagination.PerPage">السابق</a>
+                </li>
+            }
+            @for (int i = 1; i <= Model.Pagination.LastPage; i++)
+            {
+                <li class="page-item @(i == Model.Pagination.CurrentPage ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@i" asp-route-pageSize="@Model.Pagination.PerPage">@i</a>
+                </li>
+            }
+            @if (Model.Pagination.CurrentPage < Model.Pagination.LastPage)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.Pagination.CurrentPage + 1)" asp-route-pageSize="@Model.Pagination.PerPage">التالي</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
