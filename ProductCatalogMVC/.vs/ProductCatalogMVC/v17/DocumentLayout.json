@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|g:\\productcatalog\\productcatalogapp\\productcatalogmvc\\productcatalogmvc\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|solutionrelative:productcatalogmvc\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|g:\\productcatalog\\productcatalogapp\\productcatalogmvc\\productcatalogmvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|solutionrelative:productcatalogmvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|g:\\productcatalog\\productcatalogapp\\productcatalogmvc\\productcatalogmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|solutionrelative:productcatalogmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|g:\\productcatalog\\productcatalogapp\\productcatalogmvc\\productcatalogmvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|solutionrelative:productcatalogmvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|g:\\productcatalog\\productcatalogapp\\productcatalogmvc\\productcatalogmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|solutionrelative:productcatalogmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|g:\\productcatalog\\productcatalogapp\\productcatalogmvc\\productcatalogmvc\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58D4AC03-0D5E-4C2A-A120-C340FAFBB418}|ProductCatalogMVC\\ProductCatalogMVC.csproj|solutionrelative:productcatalogmvc\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,84 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "ProductCatalogMVC\\Views\\Products\\Index.cshtml",
-              "ToolTip": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "ProductCatalogMVC\\Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-23T03:20:26.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Program.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMVC\\Program.cs",
-              "ToolTip": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Program.cs",
-              "RelativeToolTip": "ProductCatalogMVC\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:11:36.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMVC\\Controllers\\AccountController.cs",
-              "ToolTip": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ProductCatalogMVC\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAACIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:09:15.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMVC\\Controllers\\ProductsController.cs",
-              "ToolTip": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "ProductCatalogMVC\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBYAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:07:58.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMVC\\Services\\ProductService.cs",
-              "ToolTip": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\Services\\ProductService.cs",
-              "RelativeToolTip": "ProductCatalogMVC\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowBUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:06:36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\DTO\\ProductDto.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMVC\\DTO\\ProductDto.cs",
-              "ToolTip": "G:\\productCatalog\\ProductCatalogAPP\\ProductCatalogMVC\\ProductCatalogMVC\\DTO\\ProductDto.cs",
-              "RelativeToolTip": "ProductCatalogMVC\\DTO\\ProductDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:05:57.306Z",
-              "EditorCaption": ""
             }
           ]
         }

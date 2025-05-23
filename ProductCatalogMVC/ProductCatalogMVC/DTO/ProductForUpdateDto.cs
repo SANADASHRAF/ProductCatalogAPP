@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Shared.DTO
+namespace ProductCatalogMVC.DTO
 {
-    public class ProductForCreationDto
+    public class ProductForUpdateDto
     {
         [Required(ErrorMessage = "الاسم مطلوب")]
         public string Name { get; set; }
@@ -16,7 +11,7 @@ namespace Shared.DTO
         public DateTime StartDate { get; set; }
 
         [Required(ErrorMessage = "المدة مطلوبة")]
-        public TimeSpan Duration { get; set; }
+        public string Duration { get; set; }
 
         [Required(ErrorMessage = "السعر مطلوب")]
         [Range(0.01, double.MaxValue, ErrorMessage = "السعر يجب أن يكون أكبر من 0")]
@@ -24,6 +19,5 @@ namespace Shared.DTO
 
         [Required(ErrorMessage = "الفئة مطلوبة")]
         public int CategoryId { get; set; }
-        public string CreatedByUserId { get; set; }
     }
 }

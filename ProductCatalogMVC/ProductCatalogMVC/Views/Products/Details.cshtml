@@ -1,0 +1,58 @@
+﻿@model ProductCatalogMVC.DTO.ProductDto
+
+@{
+    ViewData["Title"] = "تفاصيل المنتج";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">تفاصيل المنتج: @Model.Name</h1>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card shadow-sm mx-auto" style="max-width: 600px;">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">@Model.Name</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4">الفئة</dt>
+                <dd class="col-sm-8">@Model.CategoryName</dd>
+                <dt class="col-sm-4">السعر</dt>
+                <dd class="col-sm-8">@Model.Price.ToString("C")</dd>
+                <dt class="col-sm-4">تاريخ البدء</dt>
+                <dd class="col-sm-8">@Model.StartDate.ToString("dd/MM/yyyy")</dd>
+                <dt class="col-sm-4">المدة</dt>
+                <dd class="col-sm-8">@Model.Duration</dd>
+                <dt class="col-sm-4">تاريخ الإنشاء</dt>
+                <dd class="col-sm-8">@Model.CreationDate.ToString("dd/MM/yyyy")</dd>
+                <dt class="col-sm-4">أنشئ بواسطة</dt>
+                <dd class="col-sm-8">@Model.CreatedByUserName</dd>
+            </dl>
+        </div>
+        <div class="card-footer bg-transparent border-0 text-center">
+            <a asp-action="Index" class="btn btn-secondary me-2">رجوع</a>
+           @*  @if (User.IsInRole("Admin"))
+            { *@
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">تعديل</a>
+                <form asp-action="Delete" asp-route-id="@Model.Id" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('هل أنت متأكد من حذف المنتج؟')">حذف</button>
+                   
+                </form>
+            @* } *@
+        </div>
+    </div>
+</div>
