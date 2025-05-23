@@ -1,0 +1,76 @@
+<div class="container mt-5" dir="rtl">
+  <h1 class="mb-4 text-center">المنتجات</h1>
+
+  @if (successMessage) {
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      {{ successMessage }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  }
+  @if (errorMessage) {
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      {{ errorMessage }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  }
+
+  <div class="mb-4 d-flex justify-content-between align-items-center">
+    <div>
+      <form (ngSubmit)="onCategoryChange()">
+        <label for="categoryId" class="form-label me-2">الفئة:</label>
+        <select id="categoryId" [(ngModel)]="categoryId" name="categoryId" class="form-select" style="width: 200px;" (change)="onCategoryChange()">
+          @for (category of categories; track category.id) {
+            <option [value]="category.id">{{ category.name }}</option>
+          }
+        </select>
+      </form>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    @if (products.length > 0) {
+      @for (product of products; track product.id) {
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{ product.name }}</h5>
+              <p class="card-text">
+                <strong>الفئة:</strong> {{ product.categoryName }}<br />
+                <strong>السعر:</strong> {{ product.price | currency }}<br />
+                <strong>تاريخ البدء:</strong> {{ product.startDate | date: 'dd/MM/yyyy' }}<br />
+                <strong>المدة:</strong> {{ product.duration }}<br />
+                <strong>أنشئ بواسطة:</strong> {{ product.createdByUserName }}
+              </p>
+            </div>
+          </div>
+        </div>
+      }
+    } @else {
+      <div class="col-12 text-center">
+        <p class="text-muted">لا توجد منتجات متاحة</p>
+      </div>
+    }
+  </div>
+
+  @if (pagination) {
+    <nav aria-label="Page navigation" class="mt-4">
+      <ul class="pagination justify-content-center">
+        @if (pagination.currentPage > 1) {
+          <li class="page-item">
+            <a class="page-link" (click)="changePage(pagination.currentPage - 1)">السابق</a>
+          </li>
+        }
+        @for (page of getPages(); track page) {
+          <li class="page-item" [ngClass]="{ 'active': page === pagination.currentPage }">
+            <a class="page-link" (click)="changePage(page)">{{ page }}</a>
+          </li>
+        }
+        @if (pagination.currentPage < pagination.lastPage) {
+          <li class="page-item">
+            <a class="page-link" (click)="changePage(pagination.currentPage + 1)">التالي</a>
+          </li>
+        }
+      </ul>
+    </nav>
+  }
+</div>

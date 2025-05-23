@@ -163,3 +163,4 @@ G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debu
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debug\net8.0\Shared.dll
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debug\net8.0\Shared.pdb
 G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\productCatalog\ProductCatalogAPP\ProductCatalogAPI\ProductCatalogAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
