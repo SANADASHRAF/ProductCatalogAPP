@@ -9,7 +9,7 @@ namespace ProductCatalogAPI.Controller
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -35,7 +35,7 @@ namespace ProductCatalogAPI.Controller
         }
 
 
-
+        [Authorize(Roles = "Admin")]
         [HttpGet("GetProductById")]
         public async Task<ActionResult<ServiceResponse<ProductDto>>> GetProductById(long id)
         {
@@ -71,7 +71,7 @@ namespace ProductCatalogAPI.Controller
             }
         }
 
-
+        [Authorize(Roles = "Admin")]
         [HttpPost ("CreateProduct")]
         public async Task<ActionResult<ServiceResponse<ProductDto>>> CreateProduct
             (ProductForCreationDto productDto)
@@ -87,7 +87,7 @@ namespace ProductCatalogAPI.Controller
             }
         }
 
-
+        [Authorize(Roles = "Admin")]
         [HttpPut("UpdateProduct")]
         public async Task<ActionResult<ServiceResponse<ProductDto>>> UpdateProduct
             (long id, ProductForUpdateDto productDto)
@@ -105,8 +105,8 @@ namespace ProductCatalogAPI.Controller
             }
         }
 
-        
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("DeleteProduct")]
         public async Task<ActionResult<ServiceResponse<bool>>> DeleteProduct(long id)
         {

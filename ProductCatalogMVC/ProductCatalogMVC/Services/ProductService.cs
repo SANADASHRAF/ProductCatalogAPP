@@ -110,6 +110,7 @@ namespace ProductCatalogMVC.Services
             }
         }
 
+
         public async Task<ServiceResponse<IEnumerable<ProductDto>>> GetProductsInCategoryAsync(int categoryId, int pageNumber = 1, int pageSize = 10)
         {
             try

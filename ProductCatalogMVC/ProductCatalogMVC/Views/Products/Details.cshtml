@@ -24,7 +24,7 @@
 
     <div class="card shadow-sm mx-auto" style="max-width: 600px;">
         <div class="card-header bg-primary text-white">
-            <h5 class="mb-0">@Model.Name</h5>
+            <h5 class="mb-0" style="text-align:center">@Model.Name</h5>
         </div>
         <div class="card-body">
             <dl class="row">
@@ -44,15 +44,15 @@
         </div>
         <div class="card-footer bg-transparent border-0 text-center">
             <a asp-action="Index" class="btn btn-secondary me-2">رجوع</a>
-           @*  @if (User.IsInRole("Admin"))
-            { *@
+            @if (User.IsInRole("Admin"))
+            {
                 <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">تعديل</a>
                 <form asp-action="Delete" asp-route-id="@Model.Id" method="post" style="display:inline;">
                     @Html.AntiForgeryToken()
                     <button type="submit" class="btn btn-danger" onclick="return confirm('هل أنت متأكد من حذف المنتج؟')">حذف</button>
                    
                 </form>
-            @* } *@
+            }
         </div>
     </div>
 </div>

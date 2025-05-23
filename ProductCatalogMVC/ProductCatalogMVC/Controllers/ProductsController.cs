@@ -6,7 +6,7 @@ using ProductCatalogMVC.Services;
 
 namespace ProductCatalogMVC.Controllers
 {
-   // [Authorize]
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly ProductService _productService;
@@ -17,21 +17,7 @@ namespace ProductCatalogMVC.Controllers
         }
 
 
-        //public async Task<IActionResult> Index(int categoryId = 0, int pageNumber = 1, int pageSize = 9)
-        //{
-        //    try
-        //    {
-        //        var response = await _productService.GetAllProductsAsync(categoryId, pageNumber, pageSize);
-
-        //        return View(response);
-        //    }
-        //    catch
-        //    {
-        //        TempData["Error"] = "حدث خطأ أثناء جلب المنتجات";
-        //        return View(new ServiceResponse<IEnumerable<ProductDto>>(false, "حدث خطأ", null));
-        //    }
-        //}
-
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index(int categoryId = 0, int pageNumber = 1, int pageSize = 10)
         {
             try
@@ -58,6 +44,9 @@ namespace ProductCatalogMVC.Controllers
                 return View(new ServiceResponse<IEnumerable<ProductDto>>(false, "حدث خطأ", null));
             }
         }
+         
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int id)
         {
             try
@@ -78,6 +67,7 @@ namespace ProductCatalogMVC.Controllers
         }
 
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
             try
@@ -108,9 +98,9 @@ namespace ProductCatalogMVC.Controllers
         }
 
 
-       // [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
-       // [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, ProductForUpdateDto productDto)
         {
             if (!ModelState.IsValid)
@@ -136,9 +126,9 @@ namespace ProductCatalogMVC.Controllers
         }
 
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
             try
@@ -162,24 +152,24 @@ namespace ProductCatalogMVC.Controllers
         }
 
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View(new ProductForCreationDto());
         }
 
-        //[Authorize(Roles = "Admin")]
+
+        [Authorize(Roles = "Admin")]
         [HttpPost]
-        // [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProductForCreationDto productDto)
         {
           
             try
             {
-                // Try to get CreatedByUserId
+                
                 productDto.CreatedByUserId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
 
-                // Debug: Log all claims
                 var claims = User.Claims.Select(c => $"{c.Type}: {c.Value}").ToList();
                 System.Diagnostics.Debug.WriteLine("Claims in Create: " + string.Join(", ", claims));
 

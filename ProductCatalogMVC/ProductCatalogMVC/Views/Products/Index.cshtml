@@ -53,7 +53,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">@product.Name</h5>
+                            <h5 class="card-title" style="text-align:center">@product.Name</h5>
                             <p class="card-text">
                                 <strong>الفئة:</strong> @product.CategoryName<br />
                                 <strong>السعر:</strong> @product.Price.ToString("C")<br />
@@ -62,9 +62,14 @@
                                 <strong>أنشئ بواسطة:</strong> @product.CreatedByUserName
                             </p>
                         </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary btn-sm">التفاصيل</a>
-                        </div>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="text-center">
+                                    <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary btn-sm">التفاصيل</a>
+                                </div>
+                            </div>
+                        }
                     </div>
                 </div>
             }

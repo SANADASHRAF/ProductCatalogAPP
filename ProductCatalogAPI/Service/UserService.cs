@@ -51,7 +51,7 @@ namespace Service
                 var roleResult = await _userManager.AddToRoleAsync(user, "Admin");
 
                 var registeredUserDto = _mapper.Map<UserDto>(user);
-                registeredUserDto.Token = GenerateJwtToken(user);
+                registeredUserDto.Token = await GenerateJwtToken(user);
 
                 return new ServiceResponse<UserDto>(true, "تم التسجيل بنجاح", registeredUserDto);
             }
@@ -70,7 +70,8 @@ namespace Service
                     return new ServiceResponse<UserDto>(false, "البريد الإلكتروني أو كلمة المرور غير صحيحة", null);
 
                 var loggedInUserDto = _mapper.Map<UserDto>(user);
-                loggedInUserDto.Token = GenerateJwtToken(user);
+                loggedInUserDto.Token = await GenerateJwtToken(user);
+
                 return new ServiceResponse<UserDto>(true, "تم تسجيل الدخول بنجاح", loggedInUserDto);
             }
             catch (Exception)
@@ -79,17 +80,24 @@ namespace Service
             }
         }
 
-        private string GenerateJwtToken(ApplicationUser user)
+        private async Task<string> GenerateJwtToken(ApplicationUser user)
         {
-            var claims = new[]
+            var userRoles = await _userManager.GetRolesAsync(user);
+
+            var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
-                new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.Role, "Admin")
+                new Claim(ClaimTypes.Name, user.UserName)
             };
+
+            foreach (var role in userRoles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, role));
+            }
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
@@ -99,5 +107,6 @@ namespace Service
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
     }
 }
